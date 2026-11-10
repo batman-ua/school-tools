@@ -1,18 +1,20 @@
 // ==UserScript==
 // @name         Canvas Report Card
 // @namespace    canvas-report-card
-// @version      2.1
+// @version      2.2
 // @description  One screen with every class grade, missing work, teacher comments and per-class targets.
 // @match        https://*.instructure.com/*
 // @grant        none
 // @run-at       document-idle
+// @updateURL    https://github.com/batman-ua/school-tools/raw/refs/heads/master/canvas-report-card/canvas-report-card.user.js
+// @downloadURL  https://github.com/batman-ua/school-tools/raw/refs/heads/master/canvas-report-card/canvas-report-card.user.js
 // ==/UserScript==
 // If your school's Canvas lives on its own domain (e.g. canvas.myschool.org),
 // add another line above:   // @match https://canvas.myschool.org/*
 
 (function () {
   'use strict';
-  const VERSION = '2.1'; // keep in sync with @version
+  const VERSION = '2.2'; // keep in sync with @version
   console.log('[crc] v' + VERSION + ' script started', location.href, window.top === window.self ? '(top frame)' : '(iframe, skipping)');
   if (window.top !== window.self) return;
 
